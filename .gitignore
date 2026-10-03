@@ -1,0 +1,11 @@
+node_modules/
+dist/
+server/github.js
+.vercel/
+.env*
+!.env.example
+.data/
+coverage/
+test-results/
+playwright-report/
+*.log

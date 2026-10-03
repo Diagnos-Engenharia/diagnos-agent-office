@@ -1,0 +1,34 @@
+{
+  "name": "diagnos-agent-office",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "tsx --env-file-if-exists=.env.local server/dev.ts",
+    "build": "tsc --noEmit && vite build",
+    "build:vercel": "npm run build && node scripts/build-vercel-functions.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "emit": "node --env-file-if-exists=.env.local scripts/emit.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 4174"
+  },
+  "dependencies": {
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "tsx": "^4.19.3",
+    "typescript": "~5.9.3",
+    "vite": "^8.0.8",
+    "vitest": "^4.1.10"
+  }
+}
