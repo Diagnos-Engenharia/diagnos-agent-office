@@ -1,5 +1,5 @@
 import type { IncomingMessage, ServerResponse } from 'node:http';
-import { publicGitHubProvider } from '../server/github';
+import { publicGitHubProvider } from '../server/github.js';
 
 export default async function handler(request: IncomingMessage, response: ServerResponse) {
   response.setHeader('X-Content-Type-Options', 'nosniff');

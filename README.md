@@ -4,7 +4,7 @@ Escritório visual independente da Diagnos, adaptado de [Pixel Agents](https://g
 
 ## O que é real nesta versão
 
-- Commits da branch principal e `feat/diagnos-agent-office`, PRs, alterações de arquivos e status externos existentes são obtidos da API do próprio repositório. Cada registro tem data, origem e link de evidência.
+- Commits da branch principal e `diagnos-agent-office-preview`, PRs, alterações de arquivos e status externos existentes são obtidos da API do próprio repositório. Cada registro tem data, origem e link de evidência.
 - Eventos recebidos pelo coletor local autenticado chegam por SSE e ficam registrados em `.data/events.jsonl`. Um executor de QA, CLI, MCP/API ou deploy pode enviar o mesmo contrato.
 - O modo **Demonstração** anima o escritório com eventos explicitamente simulados, gerados exclusivamente em `src/events/simulation.ts`. Pode ser desligado; não cria commits nem resultados de testes.
 - DG Manual, DG Tech e Diagnos QA são cards de referência, sem conexão com seus repositórios nesta versão. Nenhum código desses projetos, nem do Nexus, é modificado.

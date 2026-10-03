@@ -28,7 +28,7 @@ const sha = (value: unknown) => /^[a-f\d]{40,64}$/i.test(str(value)) ? str(value
 /** Server-only adapter. Tokens never enter OfficeEvent payloads or browser bundles. */
 export function createGitHubProvider(options: GitHubOptions = {}) {
   const repository = options.repository ?? process.env.GITHUB_REPOSITORY ?? 'Diagnos-Engenharia/diagnos-agent-office';
-  const branch = options.branch ?? process.env.GITHUB_BRANCH ?? 'feat/diagnos-agent-office';
+  const branch = options.branch ?? process.env.GITHUB_BRANCH ?? 'diagnos-agent-office-preview';
   const token = options.token ?? process.env.GITHUB_TOKEN;
   const fetcher = options.fetch ?? fetch;
   const now = options.now ?? Date.now;

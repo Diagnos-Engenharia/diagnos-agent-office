@@ -1,5 +1,6 @@
 node_modules/
 dist/
+server/github.js
 .vercel/
 .env*
 !.env.example

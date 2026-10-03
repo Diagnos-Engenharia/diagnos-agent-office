@@ -22,7 +22,7 @@ Esta versão observa apenas `Diagnos-Engenharia/diagnos-agent-office`. O painel 
 
 ## GitHub real
 
-`GET /api/github` consulta exclusivamente o repositório configurado no servidor. Lê os últimos commits da branch padrão e de `GITHUB_BRANCH` (padrão `feat/diagnos-agent-office`), os PRs recentemente atualizados, detalhes de arquivos e status externos já existentes. Uma atualização no PR ou no seu commit de origem recebe novo identificador. Commits que aparecem nas duas branches são deduplicados pelo SHA.
+`GET /api/github` consulta exclusivamente o repositório configurado no servidor. Lê os últimos commits da branch padrão e de `GITHUB_BRANCH` (padrão `diagnos-agent-office-preview`), os PRs recentemente atualizados, detalhes de arquivos e status externos já existentes. Uma atualização no PR ou no seu commit de origem recebe novo identificador. Commits que aparecem nas duas branches são deduplicados pelo SHA.
 
 Um commit coloca Dev em `success` porque o commit foi registrado; **isso não comprova aprovação de testes**. Um PR aberto coloca Orquestrador em `waiting`, um rascunho em `working`, um PR integrado em `success`. QA e Segurança recebem resultados de status externos somente quando existirem no GitHub. Nenhum workflow GitHub Actions é criado, executado ou usado para validar esta implementação.
 
